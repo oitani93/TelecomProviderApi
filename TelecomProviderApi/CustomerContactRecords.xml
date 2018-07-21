@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<CustomerContactsModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Contacts>
+    <ContactModel>
+      <Id>0</Id>
+      <Title>Mr</Title>
+      <FirstName>omar</FirstName>
+      <LastName>itani</LastName>
+      <ContactNumbers>
+        <MobileNumber>0123456789</MobileNumber>
+        <WorkNumber>1234567890</WorkNumber>
+      </ContactNumbers>
+    </ContactModel>
+    <ContactModel>
+      <Id>0</Id>
+      <Title>Mr</Title>
+      <FirstName>Adam</FirstName>
+      <LastName>itani</LastName>
+      <ContactNumbers>
+        <WorkNumber>1234567890</WorkNumber>
+        <OtherNumber>0123456789</OtherNumber>
+      </ContactNumbers>
+    </ContactModel>
+  </Contacts>
+</CustomerContactsModel>

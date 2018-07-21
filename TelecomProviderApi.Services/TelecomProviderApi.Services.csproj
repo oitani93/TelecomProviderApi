@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TelecomProviderApi.Services.Interface\TelecomProviderApi.Services.Interface.csproj" />
+    <ProjectReference Include="..\TelecomProviderApi\TelecomProviderApi.csproj" />
+  </ItemGroup>
+
+</Project>
