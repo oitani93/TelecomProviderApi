@@ -1,4 +1,4 @@
-﻿namespace TelecomProviderApi.Models
+namespace TelecomProviderApi.Models
 {
     public static class NumberType
     {
@@ -7,6 +7,8 @@
         public const string WORK = "WOR";
         public const string OTHER = "OTH";
     }
+
+// test comments
 
     public class ContactNumberModel
     {
