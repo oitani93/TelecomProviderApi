@@ -4,7 +4,7 @@ using TelecomProviderApi.Services.Interface;
 
 namespace TelecomProviderApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] //test
     public class CustomerContactNumberController : Controller
     {
         private readonly ICustomersContactService _customersContactService;
