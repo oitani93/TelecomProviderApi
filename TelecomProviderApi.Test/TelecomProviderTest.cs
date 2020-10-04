@@ -35,7 +35,7 @@ namespace TelecomProviderApi.Test
             Assert.NotNull(actionResult);
             var result = actionResult as OkObjectResult;
             Assert.NotNull(result);
-            Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+            Assert.AreEqual((int)HttpStatusCode.OK, result.StatusCode);
         }
 
         [Test]
@@ -48,7 +48,7 @@ namespace TelecomProviderApi.Test
             Assert.NotNull(actionResult);
             var result = actionResult as OkObjectResult;
             Assert.NotNull(result);
-            Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+            Assert.AreEqual((int)HttpStatusCode.OK, result.StatusCode);
             var model = result.Value as CustomerContactModel;
             Assert.AreEqual(id, model.Id);
         }
