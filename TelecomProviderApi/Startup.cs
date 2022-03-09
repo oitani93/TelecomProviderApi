@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TelecomProviderApi.Services.Interface;
 using TelecomProviderApi.Services;
+using Microsoft.OpenApi.Models;
 
 namespace TelecomProviderApi
 {
@@ -27,11 +28,10 @@ namespace TelecomProviderApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ICustomersContactService, CustomersContactService>();
-            services.AddMvc();
-
+            services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Customer Contact Number API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Customer Contact Number API", Version = "v1" });
             });
         }
 
